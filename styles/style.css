@@ -429,10 +429,18 @@ footer a:hover {
   }
   .highlighted {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
-  .highlighted img {
-    margin-left: 0%;
+
+  .highlighted .recipe {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    color: #81492a;
+    text-align: left;
+    margin-left: 3%;
   }
   #copyright {
     display: flex;
