@@ -392,7 +392,7 @@ footer a:hover {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (minn-width: 1024px) {
   header {
     display: flex;
     flex-direction: column;
