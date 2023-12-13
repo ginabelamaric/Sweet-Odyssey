@@ -21,10 +21,8 @@ header {
 }
 
 #logo {
-  /*centriran cili div*/
   display: flex;
   flex-direction: row;
-  /*sredivanje naslova*/
   font-size: 35px;
   font-weight: bold;
   text-align: center;
@@ -83,7 +81,8 @@ header img {
 
 .left {
   padding: 4% 1% 4% 1%;
-  margin-left: 3%;
+  margin: 3%;
+  margin-right: 0%;
   flex-grow: 3;
   background-color: var(--beige-shade);
   text-align: center;
@@ -98,7 +97,7 @@ header img {
 }
 
 .right {
-  margin: 3%;
+  margin: 2%;
   padding: 20px;
   display: flex;
   flex-direction: row;
@@ -109,7 +108,7 @@ header img {
 }
 
 .right img {
-  margin: 2%;
+  margin: 1% 0% 1% 0%;
   width: 400px;
   height: 550px;
   object-fit: cover;
@@ -169,7 +168,7 @@ header img {
 }
 
 #highlights > h1 {
-  font-size: 30px;
+  font-size: 35px;
   color: var(--brown-shade);
   margin: 3%;
 }
@@ -188,6 +187,7 @@ header img {
   color: #81492a;
   text-align: left;
   margin-left: 3%;
+  font-size: 22px;
 }
 
 .highlighted h1 {
@@ -202,7 +202,7 @@ header img {
   border: 10px solid var(--brown-shade);
   border-radius: 12px;
   margin-bottom: 2%;
-  margin-left: 15%;
+  margin-left: 17%;
 }
 
 footer {
@@ -245,7 +245,127 @@ footer a:hover {
   text-decoration: none;
 }
 
-@media screen and (max-width: 767px) {
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+  padding: 2%;
+  width: 350px;
+  height: 350px;
+  background-color: var(--brown-shade);
+  border-radius: 15px;
+  color: var(--yellow-shade);
+}
+
+.card img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border: 7px solid var(--gold-shade);
+  border-radius: 12px;
+}
+
+.card h3 {
+  font-size: 20px;
+  color: var(--gold-shade);
+}
+
+@media screen and (max-width: 499px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #navbar a {
+    margin-bottom: 5%;
+  }
+  .flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .left {
+    padding: 2%;
+    margin-left: 0;
+    margin-top: 5%;
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+  }
+  .right img {
+    width: 300px;
+  }
+  #about_us {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .left_about {
+    padding: 10px;
+    margin-right: 10%;
+  }
+  .left_about img {
+    width: 300px;
+    height: 300px;
+  }
+  .right_about {
+    padding: 0px 50px 20px 50px;
+  }
+  .highlighted {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .highlighted img {
+    margin-left: 0%;
+    width: 300px;
+    height: 300px;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #sitemap {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
   header {
     display: flex;
     flex-direction: column;
@@ -291,7 +411,11 @@ footer a:hover {
     align-items: center;
   }
   .left_about {
+    padding: 10px;
     margin-right: 12%;
+  }
+  .right_about {
+    padding: 0px 50px 0px 50px;
   }
   .highlighted {
     display: flex;
@@ -389,61 +513,5 @@ footer a:hover {
   }
   #sitemap {
     text-align: center;
-  }
-}
-
-@media screen and (minn-width: 1024px) {
-  header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  #navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-  .flexbox {
-    display: flex;
-    flex-direction: column;
-  }
-  .left {
-    margin-top: 5%;
-  }
-  #about_us {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  .left_about {
-    margin-right: 12%;
-  }
-  .highlighted {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .highlighted .recipe {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    color: #81492a;
-    text-align: left;
-    margin-left: 3%;
-  }
-  #copyright {
-    display: flex;
-    flex-direction: column;
   }
 }
