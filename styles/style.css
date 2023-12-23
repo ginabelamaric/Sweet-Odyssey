@@ -281,6 +281,74 @@ footer a:hover {
   color: var(--gold-shade);
 }
 
+#login_signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2%;
+  width: 480px;
+  background-color: var(--brown-shade);
+  border: 10px solid var(--beige-shade);
+  border-radius: 15px;
+  color: var(--yellow-shade);
+}
+
+#login_signup h1 {
+  font-size: 30px;
+  color: var(--gold-shade);
+  margin-bottom: 30px;
+}
+
+#login_signup input {
+  margin: 2% 2% 6% 2%;
+  padding: 2%;
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid var(--gold-shade);
+}
+
+#login_signup button {
+  margin: 2% 0% 0% 33%;
+  padding: 2%;
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid var(--yellow-shade);
+  background-color: var(--gold-shade);
+  transition: 0.3s;
+}
+
+#login_signup button:hover {
+  background-color: var(--blue-shade);
+}
+
+#login_signup a {
+  font-size: 17px;
+  font-weight: bold;
+  color: var(--gold-shade);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#login_signup button a {
+  color: var(--brown-shade);
+}
+
+#login_signup a:hover {
+  color: var(--blue-shade);
+  text-decoration: none;
+}
+
+#login_signup button a:hover {
+  color: var(--yellow-shade);
+}
+
 @media screen and (max-width: 499px) {
   header {
     display: flex;
